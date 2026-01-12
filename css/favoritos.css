@@ -1,0 +1,161 @@
+:root {
+    --primary: #00c6fb;
+    --gold: #ffcc00;
+    --bg-body: #f1f5f9;
+    --heart-color: rgba(239, 68, 68, 0.6); /* Rojo suave sutil */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background: #0f172a;
+    padding: 1.2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--gold);
+}
+
+.header-left { display: flex; align-items: center; gap: 20px; }
+.btn-back { color: #94a3b8; text-decoration: none; font-size: 0.9rem; }
+.header h1 { color: white; font-size: 1.4rem; }
+.header h1 span { color: var(--gold); font-weight: 300; margin-left: 5px; }
+
+/* LAYOUT */
+.fav-layout {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.fav-container {
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.fav-intro { margin-bottom: 25px; }
+.fav-intro h2 { color: #1e293b; font-size: 1.2rem; }
+.fav-intro p { color: #64748b; font-size: 0.85rem; }
+
+/* ITEMS */
+.contact-list { list-style: none; }
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    border-color: var(--gold);
+}
+
+.contact-info { display: flex; align-items: center; gap: 15px; }
+
+/* CORAZÓN Y ACCIONES */
+.item-actions { display: flex; align-items: center; gap: 12px; }
+
+.heart-icon {
+    font-size: 0.9rem;
+    color: var(--heart-color);
+    cursor: default;
+    user-select: none;
+}
+
+.btn-view {
+    text-decoration: none;
+    background: #f8fafc;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.btn-view:hover { background: #e0f2fe; transform: scale(1.1); }
+
+/* AVATARES */
+.avatar {
+    width: 48px; height: 48px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: bold; font-size: 0.85rem;
+}
+.purple-grad { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+.blue-grad { background: linear-gradient(135deg, #00c6fb, #0072ff); }
+
+.text-details .name { display: block; font-weight: 600; color: #1e293b; }
+.text-details .phone { font-size: 0.8rem; color: #64748b; }
+
+/* DETALLES (DERECHA) */
+.details-wrapper { position: sticky; top: 40px; height: fit-content; }
+
+.no-selection {
+    padding: 50px; text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #cbd5e1;
+    border-radius: 24px;
+    color: #94a3b8; font-size: 0.9rem;
+}
+
+.contact-detail {
+    display: none;
+    background: white; padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border: 1px solid var(--gold);
+    animation: fadeIn 0.4s ease;
+}
+
+.contact-detail:target { display: block; }
+.contact-detail:target ~ .no-selection { display: none; }
+
+.avatar-large {
+    width: 70px; height: 70px; border-radius: 50%;
+    margin: 0 auto 15px; display: flex;
+    align-items: center; justify-content: center;
+    color: white; font-size: 1.5rem; font-weight: bold;
+}
+
+.tag-fav {
+    background: rgba(255, 204, 0, 0.1);
+    color: #b45309; font-size: 0.7rem;
+    padding: 4px 12px; border-radius: 20px;
+    font-weight: 700; text-transform: uppercase;
+}
+
+.detail-card p {
+    background: #f8fafc; padding: 12px;
+    border-radius: 12px; margin-bottom: 10px;
+    font-size: 0.85rem; border-left: 3px solid var(--gold);
+}
+
+.btn-close {
+    display: block; text-align: center;
+    margin-top: 20px; color: #94a3b8;
+    text-decoration: none; font-size: 0.75rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

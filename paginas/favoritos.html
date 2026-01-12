@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos | Agenda Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/favoritos.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="contactos.html" class="btn-back">← Volver</a>
+            <h1>Mis<span>Favoritos</span></h1>
+        </div>
+        <span class="star-badge">⭐</span>
+    </header>
+
+    <main class="fav-layout">
+        <section class="fav-container">
+            <div class="fav-intro">
+                <h2>Contactos Destacados</h2>
+                <p>Tus conexiones más importantes con acceso rápido.</p>
+            </div>
+
+            <ul class="contact-list">
+                <li>
+                    <div class="contact-item">
+                        <div class="contact-info">
+                            <div class="avatar purple-grad">FS</div>
+                            <div class="text-details">
+                                <span class="name">Fiore Saquic</span>
+                                <span class="phone">33636362</span>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <span class="heart-icon">❤️</span>
+                            <a href="#detalle-fiore" class="btn-view">📋</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="contact-item">
+                        <div class="contact-info">
+                            <div class="avatar blue-grad">CS</div>
+                            <div class="text-details">
+                                <span class="name">Cristian Santos</span>
+                                <span class="phone">33956333</span>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <span class="heart-icon">❤️</span>
+                            <a href="#detalle-cristian" class="btn-view">📋</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <aside class="details-wrapper">
+            <div class="no-selection">
+                <p>Haz clic en 📋 para ver los detalles del favorito</p>
+            </div>
+
+            <article class="contact-detail" id="detalle-fiore">
+                <div class="detail-header">
+                    <div class="avatar-large purple-grad">FS</div>
+                    <h2>Fiore Saquic</h2>
+                    <span class="tag-fav">Familiar</span>
+                </div>
+                <div class="detail-card">
+                    <p><strong>📞 Teléfono:</strong> +502 33636362</p>
+                    <p><strong>✉️ Correo:</strong> fiore@gmail.com</p>
+                    <p><strong>📍 Dirección:</strong> La Cañada, colonia 4</p>
+                    <a href="#" class="btn-close">Cerrar Detalle</a>
+                </div>
+            </article>
+
+            <article class="contact-detail" id="detalle-cristian">
+                <div class="detail-header">
+                    <div class="avatar-large blue-grad">CS</div>
+                    <h2>Cristian Santos</h2>
+                    <span class="tag-fav">Trabajo</span>
+                </div>
+                <div class="detail-card">
+                    <p><strong>📞 Teléfono:</strong> +502 33956333</p>
+                    <p><strong>✉️ Correo:</strong> cristian@gmail.com</p>
+                    <p><strong>📍 Dirección:</strong> La Cañada, colonia 5</p>
+                    <a href="#" class="btn-close">Cerrar Detalle</a>
+                </div>
+            </article>
+        </aside>
+    </main>
+
+</body>
+</html>
