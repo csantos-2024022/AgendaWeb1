@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Tareas | Agenda Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="../css/tareas.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="contactos.html" class="btn-back" style="color: white; text-decoration: none; margin-right: 20px;">← Volver</a>
+            <h1>Gestor de<span>Tareas</span></h1>
+        </div>
+        
+        <div class="header-right">
+            <div class="user-profile-nav">
+                <span id="nav-user-name" class="user-name">Usuario</span>
+                <div class="user-avatar-nav">
+                    <img src="../img/unnamed.jpg" alt="Perfil">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="todo-layout">
+        <section class="todo-form-container">
+            <h3>📝 Agregar Nueva Tarea</h3>
+            <form id="form-tareas">
+                <div class="input-group">
+                    <input type="text" id="input-texto-tarea" placeholder="Ej: Comprar materiales de oficina" required>
+                    <select id="select-prioridad">
+                        <option value="1">Prioridad 1 (Alta)</option>
+                        <option value="2">Prioridad 2 (Media)</option>
+                        <option value="3" selected>Prioridad 3 (Baja)</option>
+                    </select>
+                    <button type="submit" class="btn-add">Añadir</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="todo-list-container">
+            <div class="list-header">
+                <h2>Lista de Pendientes</h2>
+                <span class="prio-info">Ordenadas por importancia</span>
+            </div>
+            <ul id="lista-tareas-ul" class="task-list">
+                </ul>
+        </section>
+    </main>
+
+    <script src="../js/tareas.js"></script>
+    <script>
+        // Cargar nombre del usuario desde localStorage
+        const user = localStorage.getItem('usuarioLogueado');
+        if (user) document.getElementById('nav-user-name').textContent = user;
+    </script>
+</body>
+</html>

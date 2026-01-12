@@ -1,0 +1,75 @@
+/* Layout específico para tareas */
+.todo-layout {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.todo-form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#input-texto-tarea {
+    flex: 3;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+}
+
+#select-prioridad {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+/* Estilos de la lista */
+.todo-list-container {
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.task-list { list-style: none; margin-top: 20px; }
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #f1f5f9;
+    border-left: 6px solid #ccc; /* Por defecto */
+    transition: 0.3s ease;
+}
+
+.task-item:hover { transform: scale(1.01); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+/* Colores de Prioridad */
+.prioridad-1 { border-left-color: #ef4444; background: #fff5f5; } /* Rojo */
+.prioridad-2 { border-left-color: #f59e0b; background: #fffaf0; } /* Naranja */
+.prioridad-3 { border-left-color: #10b981; background: #f0fff4; } /* Verde */
+
+.task-info { display: flex; flex-direction: column; }
+.task-name { font-weight: 600; color: #1e293b; font-size: 1.1rem; }
+.task-priority-text { font-size: 0.8rem; color: #64748b; margin-top: 4px; }
+
+.btn-edit { color: #3a7bd5; cursor: pointer; font-size: 1.2rem; margin-right: 15px; }
+.btn-delete { color: #ef4444; cursor: pointer; font-size: 1.2rem; }
