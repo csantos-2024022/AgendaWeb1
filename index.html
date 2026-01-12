@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <!-- LOGIN UIVERSE ADAPTADO -->
+    <!-- LOGIN -->
     <form class="form" action="paginas/contactos.html">
         <div class="form-title">
             <span>Inicia sesión en</span>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="input-container">
-            <input class="input-mail" type="email" placeholder="Correo electrónico" required>
+            <input id="email-input" class="input-mail" type="email" placeholder="Correo electrónico" required>
             <span></span>
         </div>
 
@@ -39,4 +39,22 @@
 
         <p class="signup-link">
             ¿No tienes cuenta?
-            <a href="#" class="u
+            <a href="#" class="up">Regístrate aquí</a>
+        </p>
+    </form>
+
+    <script>
+        document.querySelector('.form').addEventListener('submit', function(e) {
+            const email = document.getElementById('email-input').value;
+            
+            let nombreUsuario = email.split('@')[0];
+            
+            nombreUsuario = nombreUsuario.charAt(0).toUpperCase() + nombreUsuario.slice(1);
+
+            localStorage.setItem('usuarioLogueado', nombreUsuario);
+            localStorage.setItem('emailLogueado', email);
+            
+        });
+    </script>
+</body>
+</html>

@@ -13,6 +13,20 @@
         <h1>Agenda<span>Contactos</span></h1>
         <a href="nuevocontacto.html" class="btn-add">+ Nuevo contacto</a>
         <a href="favoritos.html" class="btn-fav">⭐ Favoritos</a>
+        <a href="perfil.html" class="user-profile-nav">
+            <span id="nav-user-name" class="user-name">Cargando...</span>
+            <div class="user-avatar-nav">
+                <img src="../img/unnamed.jpg" alt="Perfil">
+            </div>
+        </a>
+
+        <script>
+            // Leer el nombre guardado y ponerlo en el navbar
+            const nombreGuardado = localStorage.getItem('usuarioLogueado');
+            if (nombreGuardado) {
+                document.getElementById('nav-user-name').textContent = nombreGuardado;
+            }
+        </script>
     </header>
 
     <main class="contacts-layout">
