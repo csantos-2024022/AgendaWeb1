@@ -11,18 +11,179 @@
         <h1>Agenda de Contactos</h1>
         <a href="nuevo-contacto.html" class="btn-add">+ Nuevo contacto</a>
     </header>
+<main class="contacts-layout">
 
-    <main class="contacts-container">
+    <!-- LISTA DE CONTACTOS -->
+    <section class="contacts-container">
         <h2>Mis contactos</h2>
 
         <ul class="contact-list">
-            <li><a href="detalle-contacto.html"><span class="name">Cristian Santos</span><span class="phone">33956333</span></a></li>
-            <li><a href="detalle-contacto.html"><span class="name">Fiore Saquic</span><span class="phone">33636362</span></a></li>
-            <li><a href="detalle-contacto.html"><span class="name">Cristopher Perez</span><span class="phone">12345678</span></a></li>
-            <li><a href="detalle-contacto.html"><span class="name">Angel Martinez</span><span class="phone">12345785</span></a></li>
-            <li><a href="detalle-contacto.html"><span class="name">Daniel Maldonado</span><span class="phone">12345698</span></a></li>
+
+            <li>
+                <div class="contact-item">
+                    <span class="name">Cristian Santos</span>
+                    <span class="phone">33956333</span>
+
+                    <div class="actions">
+                        <a href="#detalle-cristian" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="contact-item">
+                    <span class="name">Fiore Saquic</span>
+                    <span class="phone">33636362</span>
+
+                    <div class="actions">
+                        <a href="#detalle-fiore" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="contact-item">
+                    <span class="name">Cristopher Perez</span>
+                    <span class="phone">12345678</span>
+
+                    <div class="actions">
+                        <a href="#detalle-cristopher" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="contact-item">
+                    <span class="name">Angel Martinez</span>
+                    <span class="phone">12345785</span>
+
+                    <div class="actions">
+                        <a href="#detalle-angel" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="contact-item">
+                    <span class="name">Daniel Maldonado</span>
+                    <span class="phone">12345698</span>
+
+                    <div class="actions">
+                        <a href="#detalle-daniel" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+                        <li>
+                <div class="contact-item">
+                    <span class="name">Adrian Lacan</span>
+                    <span class="phone">25252525</span>
+
+                    <div class="actions">
+                        <a href="#detalle-adrian" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+            </li>
+                        <li>
+                <div class="contact-item">
+                    <span class="name">Alan Alvarez</span>
+                    <span class="phone">12121212</span>
+
+                    <div class="actions">
+                        <a href="#detalle-alan" class="btn-view">📋</a>
+                        <span class="btn-delete">🗑️</span>
+                    </div>
+                </div>
+            </li>
+
         </ul>
-    </main>
+    </section>
+
+    <!-- DETALLES (OCULTOS POR DEFECTO) -->
+
+    <section class="contact-detail" id="detalle-cristian">
+        <h2>Detalle del contacto Cristian</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Cristian Santos</p>
+            <p><strong>Teléfono:</strong> +502 33956333</p>
+            <p><strong>Correo:</strong> cristian@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 5</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+
+    <section class="contact-detail" id="detalle-fiore">
+        <h2>Detalle del contacto Fiore</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Fiore Saquic</p>
+            <p><strong>Teléfono:</strong> +502 33636362</p>
+            <p><strong>Correo:</strong> fiore@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 4</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+
+    <section class="contact-detail" id="detalle-cristopher">
+        <h2>Detalle del contacto Cristopher</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Cristopher Perez</p>
+            <p><strong>Teléfono:</strong> +502 12345678</p>
+            <p><strong>Correo:</strong> cristopher@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 3</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+
+    <section class="contact-detail" id="detalle-angel">
+        <h2>Detalle del contacto Angel</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Angel Martinez</p>
+            <p><strong>Teléfono:</strong>+502 12345785</p>
+            <p><strong>Correo:</strong> angel@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 2</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+
+    <section class="contact-detail" id="detalle-daniel">
+        <h2>Detalle del contacto Daniel</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Daniel Maldonado</p>
+            <p><strong>Teléfono:</strong>+502 12345698</p>
+            <p><strong>Correo:</strong> daniel@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 1</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+    <section class="contact-detail" id="detalle-adrian">
+        <h2>Detalle del contacto Adrian</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Adrian Lacan</p>
+            <p><strong>Teléfono:</strong>+502 25252525</p>
+            <p><strong>Correo:</strong> adrian@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 6</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+        <section class="contact-detail" id="detalle-alan">
+        <h2>Detalle del contacto Alan</h2>
+        <div class="detail-card">
+            <p><strong>Nombre:</strong> Alan Alvarez</p>
+            <p><strong>Teléfono:</strong>+502 12121212</p>
+            <p><strong>Correo:</strong> alan@gmail.com</p>
+            <p><strong>Direccion:</strong> La Cañada, colonia 6</p>
+            <a href="#" class="btn-close">Cerrar</a>
+        </div>
+    </section>
+
+</main>
+
 
 </body>
 </html>
