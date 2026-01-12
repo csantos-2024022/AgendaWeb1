@@ -1,0 +1,96 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f4f8;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #4facfe, #00c6fb);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* BOTÓN AGREGAR */
+.btn-add {
+    background-color: white;
+    color: #4facfe;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #e6e6e6;
+    color: #0077cc;
+}
+
+/* CONTENEDOR */
+.contacts-container {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* LISTA */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.contact-list li:last-child {
+    border-bottom: none;
+}
+
+/* CONTACTO */
+.contact-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact-list a:hover {
+    background-color: #f0f8ff;
+    transform: translateX(5px);
+}
+
+/* TEXTO */
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.phone {
+    color: #666;
+    font-size: 14px;
+}
