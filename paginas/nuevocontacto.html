@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto | Agenda Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nuevocontacto.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Agenda<span>Contactos</span></h1>
+            <a href="contactos.html" class="btn-back">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver
+            </a>
+        </div>
+    </header>
+
+<main class="main-wrapper">
+    <section class="form-container">
+        <div class="form-header">
+            <div class="icon-circle">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+            </div>
+            <div>
+                <h2>Nuevo Contacto</h2>
+                <p>La información se guardará en tu nube personal.</p>
+            </div>
+        </div>
+
+        <form>
+            <div class="input-group">
+                <label for="nombre">Nombre completo</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">👤</span>
+                    <input type="text" id="nombre" placeholder="Ej. Cristian Santos" required>
+                </div>
+            </div>
+
+            <div class="grid-inputs">
+                <div class="input-group">
+                    <label for="telefono">Teléfono</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">📞</span>
+                        <input type="tel" id="telefono" placeholder="Ej. 33956333">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="correo">Correo electrónico</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉️</span>
+                        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="direccion">Dirección</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">📍</span>
+                    <textarea id="direccion" rows="3" placeholder="Calle, número, ciudad..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <button type="button" class="btn-cancel">Descartar</button>
+                <button type="submit" class="btn-save">
+                    <span>Guardar Contacto</span>
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l6-6a1 1 0 00-1.414-1.414l-5.293 5.293-2.293-2.293z"></path></svg>
+                </button>
+            </div>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>

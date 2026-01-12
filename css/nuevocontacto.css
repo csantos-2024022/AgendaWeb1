@@ -1,0 +1,211 @@
+:root {
+    --primary: #00c6fb;
+    --secondary: #0072ff;
+    --dark: #1a1a1a;
+    --text-main: #2d3436;
+    --text-light: #636e72;
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("../img/images.jpg") center / cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER ESTILIZADO */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.header h1 span {
+    color: var(--primary);
+    font-weight: 300;
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.btn-back:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 30px;
+    
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.1),          
+        0 0 30px rgba(0, 198, 251, 0.15),        
+        inset 0 0 15px rgba(0, 198, 251, 0.05);  
+    border: 1px solid rgba(0, 198, 251, 0.2);
+    
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.form-container:hover {
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.12), 
+        0 0 45px rgba(0, 198, 251, 0.25); /* Glow más presente */
+    transform: translateY(-5px);
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* GRID PARA TELÉFONO Y CORREO */
+.grid-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+    .grid-inputs { grid-template-columns: 1fr; }
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 2px solid #edf2f7;
+    background: #f8fafc;
+    font-size: 1rem;
+    color: var(--text-main);
+    transition: var(--transition);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(0, 198, 251, 0.1);
+}
+
+/* BOTONES */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-cancel {
+    background: transparent;
+    color: var(--text-light);
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-cancel:hover {
+    background: #f1f2f6;
+    color: var(--dark);
+}
+
+.btn-save {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 114, 255, 0.2);
+    transition: var(--transition);
+}
+
+.btn-save:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 114, 255, 0.3);
+}
+
+.btn-save:active {
+    transform: translateY(-1px);
+}
