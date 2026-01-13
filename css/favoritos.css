@@ -2,7 +2,7 @@
     --primary: #00c6fb;
     --gold: #ffcc00;
     --bg-body: #f1f5f9;
-    --heart-color: rgba(239, 68, 68, 0.6); /* Rojo suave sutil */
+    --heart-color: rgba(239, 68, 68, 0.6); 
 }
 
 * {
